@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plink_zen_graph"
+    app:startDestination="@id/plinkZenLoadFragment">
+
+    <fragment
+        android:id="@+id/plinkZenLoadFragment"
+        android:name="com.pinqze.softclu.vbnjk.presentation.ui.load.PlinkZenLoadFragment"
+        android:label="PlinkZenLoadFragment" >
+        <action
+            android:id="@+id/action_plinkZenLoadFragment_to_plinkZenV"
+            app:destination="@id/plinkZenV"
+            app:popUpTo="@id/plink_zen_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/plinkZenV"
+        android:name="com.pinqze.softclu.vbnjk.presentation.ui.view.PlinkZenV"
+        android:label="PlinkZenV" />
+</navigation>
