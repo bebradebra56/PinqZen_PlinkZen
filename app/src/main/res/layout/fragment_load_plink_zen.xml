@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/plink_zen_bg" />
 
 
     <androidx.constraintlayout.widget.Group
@@ -52,7 +52,7 @@
         android:id="@+id/plinkZenProgress"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:indeterminateTint="@color/black"
+        android:indeterminateTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,26 +60,18 @@
         app:layout_constraintVertical_bias="0.65999997" />
 
 
-    <TextView
+    <ImageView
         android:id="@+id/plinkZenConnectionState"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:fontFamily="@font/adlam_display"
-        android:gravity="center"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="No internet connection"
-        android:textColor="@color/white"
-        android:textSize="35sp"
+        android:layout_height="250dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26999998" />
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/plink_button_state" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/plinkZenNotiGroup"
@@ -97,15 +89,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/plink_zen_portain_bg" />
 
     <TextView
         android:id="@+id/plinkZenNotifText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="17dp"
         android:fontFamily="@font/adlam_display"
         android:gravity="center"
         android:shadowColor="@color/black"
@@ -127,8 +119,8 @@
         android:layout_height="50dp"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="6dp"
-        android:background="@drawable/ic_launcher_background"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/plink_zen_btn"
         android:fontFamily="@font/adlam_display"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -140,11 +132,12 @@
         app:layout_constraintEnd_toEndOf="@+id/plinkZenNotifText"
         app:layout_constraintStart_toStartOf="@+id/plinkZenNotifText" />
 
-    <TextView
+    <Button
         android:id="@+id/plinkZenSkipButton"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/plink_zen_skip"
         android:fontFamily="@font/adlam_display"
         android:gravity="center"
         android:shadowColor="@color/black"
@@ -162,8 +155,8 @@
         android:id="@+id/plinkZenNotifText2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/adlam_display"
         android:gravity="center"

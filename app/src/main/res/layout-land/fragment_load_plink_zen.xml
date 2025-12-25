@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/plink_zen_bg" />
 
 
     <androidx.constraintlayout.widget.Group
@@ -52,7 +52,7 @@
         android:id="@+id/plinkZenProgress"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:indeterminateTint="@color/black"
+        android:indeterminateTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,26 +60,18 @@
         app:layout_constraintVertical_bias="0.65999997" />
 
 
-    <TextView
+    <ImageView
         android:id="@+id/plinkZenConnectionState"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:fontFamily="@font/adlam_display"
-        android:gravity="center"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="No internet connection"
-        android:textColor="@color/white"
-        android:textSize="35sp"
+        android:layout_height="250dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26999998" />
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/plink_button_state" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/plinkZenNotiGroup"
@@ -97,17 +89,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/plink_zen_land_bg" />
 
     <TextView
         android:id="@+id/plinkZenNotifText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="17dp"
         android:fontFamily="@font/adlam_display"
-        android:gravity="center"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -116,8 +106,9 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/plinkZenNotifText2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/plinkZenGrandButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/plinkZenBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:lineHeight="35dp" />
 
@@ -125,10 +116,10 @@
         android:id="@+id/plinkZenGrandButton"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="6dp"
-        android:background="@drawable/ic_launcher_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/plink_zen_btn"
         android:fontFamily="@font/adlam_display"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -137,14 +128,16 @@
         android:text="Yes, I Want Bonuses!"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/plinkZenSkipButton"
-        app:layout_constraintEnd_toEndOf="@+id/plinkZenNotifText"
-        app:layout_constraintStart_toStartOf="@+id/plinkZenNotifText" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/plinkZenNotifText" />
 
-    <TextView
+    <Button
         android:id="@+id/plinkZenSkipButton"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/plink_zen_skip"
         android:fontFamily="@font/adlam_display"
         android:gravity="center"
         android:shadowColor="@color/black"
@@ -162,11 +155,7 @@
         android:id="@+id/plinkZenNotifText2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="@font/adlam_display"
-        android:gravity="center"
         android:letterSpacing="0"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -176,10 +165,10 @@
         android:textColor="@color/white"
 
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/plinkZenGrandButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/plinkZenSkipButton"
+        app:layout_constraintEnd_toEndOf="@+id/plinkZenNotifText"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/plinkZenNotifText"
         app:lineHeight="35dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
